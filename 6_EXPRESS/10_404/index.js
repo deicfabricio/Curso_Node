@@ -12,7 +12,6 @@ app.use(
         extended: true,
     })
 )
-
 app.use(express.json())
 
 // arquivos estaticos 
