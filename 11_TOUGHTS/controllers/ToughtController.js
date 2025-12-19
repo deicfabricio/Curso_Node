@@ -76,7 +76,7 @@ module.exports = class ToughtController {
             await Tought.create(tought)
 
             req.flash('message', 'Pensamento criado com sucesso! ')
-
+            
             req.session.save(() => {
                 res.redirect('/toughts/dashboard')
             })
